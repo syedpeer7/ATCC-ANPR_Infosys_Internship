@@ -1,0 +1,10 @@
+ultralytics
+streamlit
+opencv-python
+pandas
+plotly
+numpy
+tqdm
+seaborn
+matplotlib
+torch

@@ -1,0 +1,21 @@
+path: C:/Users/ADMIN/Documents/Dev_Projects/Traffic_Infosys/UVH-26_dataset
+train: UVH-26-Train/images  # Scans all subfolders (including augmented ones)
+val: UVH-26-Val/images
+
+# Total classes (0 to 12)
+nc: 13
+
+names:
+  0: Hatchback
+  1: Sedan
+  2: SUV
+  3: MUV
+  4: Bus            # Includes Merged Mini-buses
+  5: Truck          # Includes Merged LCVs
+  6: Three-wheeler
+  7: Two-wheeler
+  8: unused_lcv     # Placeholder (Empty)
+  9: unused_minibus # Placeholder (Empty)
+  10: Tempo-traveller
+  11: Bicycle
+  12: Van
