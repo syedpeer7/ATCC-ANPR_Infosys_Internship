@@ -1,1 +1,122 @@
-ATCC&ANPR
+# Artifacts of Internship
+
+This repository contains all project artifacts developed during the internship, including data processing scripts, exploratory data analysis (EDA) notebooks, model training pipelines, and traffic/violation detection engines.
+
+The primary objective of this project is to:
+- Perform **EDA on traffic datasets**
+- **Preprocess and rebalance data**
+- Train **YOLOv9-based detection models**
+- Build **traffic and violation detection engines**
+
+---
+
+## 📁 Repository Structure
+
+```text
+Artifacts-of-internship/
+├── ATCC.py
+├── DatasetInfo.txt
+├── EDAonaData.ipynb
+├── After(For Merged Classes) EDA.ipynb
+├── Class Merger.ipynb
+├── DataDownloadingFIle.ipynb
+├── Oversampling some classes.ipynb
+├── TrainingYOLOV9.ipynb
+├── coco to yolo lables.ipynb
+├── traffic_engine.py
+├── violation_engine.py
+├── uvh26_final.yaml
+├── requirements.txt
+└── models/   (to be added using Git LFS)
+```
+
+## 🚀 Project Overview
+
+This project is a collection of tools, notebooks, and scripts for traffic-related machine learning workflows:
+
+### 📊 Notebooks
+
+| Notebook | Description |
+|----------|-------------|
+| `EDAonaData.ipynb` | Initial exploratory data analysis on the dataset. |
+| `After(For Merged Classes) EDA.ipynb` | EDA after merging similar classes. |
+| `Class Merger.ipynb` | Notebook to merge dataset classes. |
+| `Oversampling some classes.ipynb` | Handling class imbalance with oversampling. |
+| `TrainingYOLOV9.ipynb` | Model training workflow using YOLOv9. |
+| `coco to yolo lables.ipynb` | Converts COCO-formatted labels to YOLO format. |
+| `DataDownloadingFIle.ipynb` | Automated script to download data files. |
+
+### 🛠️ Python Scripts
+
+| Script | Purpose |
+|--------|---------|
+| `traffic_engine.py` | Main logic to handle traffic detection and processing. |
+| `violation_engine.py` | Logic to detect and log violations based on model predictions. |
+| `ATCC.py` | Utility script or custom algorithm (describe further). |
+
+### 📌 Config & Metadata
+
+| File | Description |
+|------|-------------|
+| `uvh26_final.yaml` | YAML config for model training (possibly dataset/train settings). |
+| `DatasetInfo.txt` | Basic dataset metadata & class information. |
+| `requirements.txt` | Required Python dependencies. |
+
+---
+
+## 🧠 Models (To Be Added)
+
+This repository will include **three trained models** stored using **Git Large File Storage (Git LFS)**. Add your model files (e.g., `.pt`, `.onnx`, `.pth`) once available.
+
+Example:
+
+models/
+├── Vehicle class.pt
+├── violation.pt
+├── NumberPlat.pt
+
+
+> **Note:** Ensure Git LFS is installed and enabled before pushing model files:  
+
+> git lfs install
+> git lfs track "*.pt" "*.pth" "*.onnx"
+> git add .gitattributes
+> git add <model-files>
+> git commit -m "Add large model files"
+> git push origin main
+> ```
+
+---
+
+## 📦 Setup & Usage
+
+1. **Clone the repository**
+   ```
+   git clone https://github.com/syedpeer7/ATCC-ANPR_Infosys_Internship.git
+   cd Artifacts-of-internship```
+   
+2. **Create a virtual environment (recommended)**
+   ```
+   python -m venv venv
+   source venv/bin/activate   # Linux/Mac
+   venv\Scripts\activate      # Windows```
+
+3. **Install dependencies**
+
+   ```pip install -r requirements.txt```
+
+4.**Run Notebooks for EDA & preprocessing**
+    ```
+    Open Jupyter Notebook
+    jupyter notebook
+    ```
+
+5. **Run Stremlit app**
+
+   ```Stremlit run ATCC.py```
+
+🎯 Contact
+
+For questions or collaboration:
+
+📌 GitHub: https://github.com/syedpeer7
